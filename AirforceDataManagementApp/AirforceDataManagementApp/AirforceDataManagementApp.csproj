@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F45C89E-579F-4B1C-847C-EA6C063C6A54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AirforceDataManagementApp</RootNamespace>
+    <AssemblyName>AirforceDataManagementApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAircraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAircraft.Designer.cs">
+      <DependentUpon>frmAircraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAirmanRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAirmanRank.Designer.cs">
+      <DependentUpon>frmAirmanRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAirmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAirmen.Designer.cs">
+      <DependentUpon>frmAirmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboAirbase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboAirbase.Designer.cs">
+      <DependentUpon>frmComboAirbase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboAircraftType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboAircraftType.Designer.cs">
+      <DependentUpon>frmComboAircraftType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboAirmanRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboAirmanRank.Designer.cs">
+      <DependentUpon>frmComboAirmanRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboBloodGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboBloodGroup.Designer.cs">
+      <DependentUpon>frmComboBloodGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboBranch.Designer.cs">
+      <DependentUpon>frmComboBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboOrdnanceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboOrdnanceType.Designer.cs">
+      <DependentUpon>frmComboOrdnanceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboRank.Designer.cs">
+      <DependentUpon>frmComboRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboReligion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboReligion.Designer.cs">
+      <DependentUpon>frmComboReligion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmComboTradeGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboTradeGroup.Designer.cs">
+      <DependentUpon>frmComboTradeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertAircraft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertAircraft.Designer.cs">
+      <DependentUpon>frmInsertAircraft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertAirmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertAirmen.Designer.cs">
+      <DependentUpon>frmInsertAirmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertOfficers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertOfficers.Designer.cs">
+      <DependentUpon>frmInsertOfficers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsertOrdnance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsertOrdnance.Designer.cs">
+      <DependentUpon>frmInsertOrdnance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadCombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadCombo.Designer.cs">
+      <DependentUpon>frmLoadCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficers.Designer.cs">
+      <DependentUpon>frmOfficers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdnance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdnance.Designer.cs">
+      <DependentUpon>frmOrdnance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOriginCountries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOriginCountries.Designer.cs">
+      <DependentUpon>frmOriginCountries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateOfficers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateOfficers.Designer.cs">
+      <DependentUpon>frmUpdateOfficers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficersInformationReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficersInformationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rptOfficersInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptOfficersInformation.Designer.cs">
+      <DependentUpon>rptOfficersInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAircraft.resx">
+      <DependentUpon>frmAircraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAirmanRank.resx">
+      <DependentUpon>frmAirmanRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAirmen.resx">
+      <DependentUpon>frmAirmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboAirbase.resx">
+      <DependentUpon>frmComboAirbase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboAircraftType.resx">
+      <DependentUpon>frmComboAircraftType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboAirmanRank.resx">
+      <DependentUpon>frmComboAirmanRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboBloodGroup.resx">
+      <DependentUpon>frmComboBloodGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboBranch.resx">
+      <DependentUpon>frmComboBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboOrdnanceType.resx">
+      <DependentUpon>frmComboOrdnanceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboRank.resx">
+      <DependentUpon>frmComboRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboReligion.resx">
+      <DependentUpon>frmComboReligion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComboTradeGroup.resx">
+      <DependentUpon>frmComboTradeGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertAircraft.resx">
+      <DependentUpon>frmInsertAircraft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertAirmen.resx">
+      <DependentUpon>frmInsertAirmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertOfficers.resx">
+      <DependentUpon>frmInsertOfficers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsertOrdnance.resx">
+      <DependentUpon>frmInsertOrdnance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadCombo.resx">
+      <DependentUpon>frmLoadCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficers.resx">
+      <DependentUpon>frmOfficers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdnance.resx">
+      <DependentUpon>frmOrdnance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOriginCountries.resx">
+      <DependentUpon>frmOriginCountries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateOfficers.resx">
+      <DependentUpon>frmUpdateOfficers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficersInformationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OfficersInformationReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rptOfficersInformation.resx">
+      <DependentUpon>rptOfficersInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
